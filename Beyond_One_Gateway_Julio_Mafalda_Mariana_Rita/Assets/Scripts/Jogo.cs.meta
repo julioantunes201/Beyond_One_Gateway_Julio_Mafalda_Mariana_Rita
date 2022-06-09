@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 21426f58dc88549f69717c1a6295d79c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - coletavel: {fileID: 2472900047527038835, guid: bc12e6a224d484454bd55965c6271237, type: 3}
+  - textoPontos: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
