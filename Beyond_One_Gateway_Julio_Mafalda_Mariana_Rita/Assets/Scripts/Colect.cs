@@ -4,26 +4,32 @@ using UnityEngine;
 
 public class Colect : MonoBehaviour
 {
+
     private const string Tag = "Player";
+    private AudioSource som;
+    private bool destruir = false;
 
     // Start is called before the first frame update
     private void Start()
     {
+	som = GetComponent<AudioSource>();
     }
     void Update()
     {
         transform.Rotate(new Vector3(15, 15, 0) * Time.deltaTime);
+	if (destruir)
+	{
+		if(!som.isPlaying) Destroy(gameObject);
+	}
     }
     private void OnDestroy()
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+
+    public void TocaSom()
     {
-        if (other.gameObject.CompareTag(Tag))
-        {
-            GameObject.FindGameObjectWithTag("Player").GetComponentInParent<PontosColetados>().points++;
-            //other.GetComponent<PontosColetados>().points++;
-        }
+        som.Play();
+        destruir = true;
     }
 }

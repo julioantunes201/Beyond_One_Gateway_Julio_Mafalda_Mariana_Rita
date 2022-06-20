@@ -18,8 +18,8 @@ public class PontosColetados : MonoBehaviour
     }
     private void OnGUI()
     {
-        GUI.contentColor = Color.black;
-        GUI.Label(new Rect(10, 20, 200, 30), "Score : " + points + "/2");
-        GUI.skin.label.fontSize = 25;
+        //GUI.contentColor = Color.black;
+        GUI.Label(new Rect(10, 10, 200, 30), "Score : " + points + "/2");
+        GUI.skin.label.fontSize = 20;
     }
 }

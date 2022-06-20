@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Coletavel
   - colect
+  - WindArea
+  - ball
+  - Cinemachine
+  - plataforma
+  - plataforma2
   layers:
   - Default
   - TransparentFX
@@ -13,9 +18,9 @@ TagManager:
   - paredes
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Level1
+  - Level2
+  - no post
   - 
   - 
   - 
